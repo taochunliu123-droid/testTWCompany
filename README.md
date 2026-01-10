@@ -152,55 +152,45 @@ MIT License
 
 ```mermaid
 flowchart TD
-  %% 高階使用者旅程 (User Journey)
-  subgraph Awareness["Awareness / 發現"]
-    A1[訪客來到網站或行銷頁面\n(廣告 / 社群 / 搜尋)]
-    A2[閱讀產品價值與摘要]
+  %% High-level User Journey / 高階使用者旅程
+  subgraph Awareness["Awareness — 發現"]
+    A1[Visitor arrives - 廣告 社群 搜尋]
+    A2[Reads product value proposition]
   end
 
-  subgraph Consideration["Consideration / 考慮"]
-    C1[瀏覽功能、方案與價格]
-    C2[比較、查看範例或評價]
+  subgraph Consideration["Consideration — 考慮"]
+    C1[Browse features, plans, pricing]
+    C2[Compare and read reviews]
   end
 
-  subgraph Conversion["Conversion / 轉換"]
-    V1[註冊或登入]
-    V2[選擇方案或加入購物車]
-    V3[付款或確認交易]
+  subgraph Conversion["Conversion — 轉換"]
+    V1[Sign up / Log in]
+    V2[Choose plan or add to cart]
+    V3[Checkout / Confirm payment]
   end
 
-  subgraph Activation["Activation / 啟用"]
-    Act1[新手導引 / Onboarding]
-    Act2[完成第一個核心任務（成功使用產品）]
+  subgraph Activation["Activation — 啟用"]
+    Act1[Onboarding]
+    Act2[Complete first core task]
   end
 
-  subgraph Retention["Retention / 留存"]
-    R1[收到通知、電子郵件或提醒]
-    R2[再次回訪並持續使用]
+  subgraph Retention["Retention — 留存"]
+    R1[Receive notifications or emails]
+    R2[Return and keep using product]
   end
 
-  subgraph Support["Support & Feedback / 支援與回饋"]
-    S1[查詢說明、FAQ 或聯絡客服]
-    S2[提交意見回饋與評價]
+  subgraph Support["Support & Feedback — 支援與回饋"]
+    S1[Search docs or contact support]
+    S2[Submit feedback and rating]
   end
 
-  subgraph Account["Account / 帳戶管理"]
-    Acc1[設定、付款與偏好管理]
-    Acc2[登出或刪除帳號]
+  subgraph Account["Account — 帳戶管理"]
+    Acc1[Settings, billing, preferences]
+    Acc2[Logout or delete account]
   end
 
-  A1 --> A2
-  A2 --> C1
-  C1 --> C2
-  C2 --> V1
-  V1 --> V2
-  V2 --> V3
-  V3 --> Act1
-  Act1 --> Act2
-  Act2 --> R1
-  R1 --> R2
+  A1 --> A2 --> C1 --> C2 --> V1 --> V2 --> V3 --> Act1 --> Act2 --> R1 --> R2
   R2 --> S2
   S1 --> S2
-  R2 --> Acc1
-  Acc1 --> Acc2
+  R2 --> Acc1 --> Acc2
   ```
