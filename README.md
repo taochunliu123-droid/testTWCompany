@@ -150,6 +150,7 @@ MIT License
 
 **提示**：如果第三方 API 無法使用，建議改用「財政部資料」選項，或申請經濟部 API 權限以獲得最佳體驗。
 
+'''mermaid
 flowchart TD
   %% 高階使用者旅程 (User Journey)
   subgraph Awareness["Awareness / 發現"]
