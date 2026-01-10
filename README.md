@@ -154,7 +154,7 @@ MIT License
 flowchart TD
   %% 高階使用者旅程 (User Journey)
   subgraph Awareness["Awareness / 發現"]
-    A1[訪客來到網站或行銷頁面<br/>(廣告 / 社群 / 搜尋)]
+    A1[訪客來到網站或行銷頁面\n(廣告 / 社群 / 搜尋)]
     A2[閱讀產品價值與摘要]
   end
 
@@ -203,4 +203,4 @@ flowchart TD
   S1 --> S2
   R2 --> Acc1
   Acc1 --> Acc2
-```
+  ```
