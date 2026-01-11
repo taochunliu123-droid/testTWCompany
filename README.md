@@ -150,47 +150,4 @@ MIT License
 
 **提示**：如果第三方 API 無法使用，建議改用「財政部資料」選項，或申請經濟部 API 權限以獲得最佳體驗。
 
-```mermaid
-flowchart TD
-  %% High-level User Journey / 高階使用者旅程
-  subgraph Awareness["Awareness — 發現"]
-    A1[Visitor arrives - 廣告 社群 搜尋]
-    A2[Reads product value proposition]
-  end
 
-  subgraph Consideration["Consideration — 考慮"]
-    C1[Browse features, plans, pricing]
-    C2[Compare and read reviews]
-  end
-
-  subgraph Conversion["Conversion — 轉換"]
-    V1[Sign up / Log in]
-    V2[Choose plan or add to cart]
-    V3[Checkout / Confirm payment]
-  end
-
-  subgraph Activation["Activation — 啟用"]
-    Act1[Onboarding]
-    Act2[Complete first core task]
-  end
-
-  subgraph Retention["Retention — 留存"]
-    R1[Receive notifications or emails]
-    R2[Return and keep using product]
-  end
-
-  subgraph Support["Support & Feedback — 支援與回饋"]
-    S1[Search docs or contact support]
-    S2[Submit feedback and rating]
-  end
-
-  subgraph Account["Account — 帳戶管理"]
-    Acc1[Settings, billing, preferences]
-    Acc2[Logout or delete account]
-  end
-
-  A1 --> A2 --> C1 --> C2 --> V1 --> V2 --> V3 --> Act1 --> Act2 --> R1 --> R2
-  R2 --> S2
-  S1 --> S2
-  R2 --> Acc1 --> Acc2
-  ```
