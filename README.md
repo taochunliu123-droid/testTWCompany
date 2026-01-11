@@ -160,31 +160,31 @@ MIT License
 graph TD
   Start([開始])
   
-  subgraph 前導階段
+  subgraph "前導階段"
     A[抵達首頁 / Landing Page]
     B[探索內容 / 瀏覽分類]
     C[查看項目詳情]
   end
 
-  subgraph 決策：是否有購買意圖
+  subgraph "決策：是否有購買意圖"
     D{有興趣購買或進一步互動嗎?}
   end
 
-  subgraph 身分與信任建立
+  subgraph "身分與信任建立"
     E{使用者已登入?}
     E1[註冊 / 建立帳號]
     E2[登入]
     E3[繼續作為訪客]
   end
 
-  subgraph 交易階段
+  subgraph "交易階段"
     F[加入購物車 / 加入詢價]
     G[確認訂單 / 填寫資訊]
     H[選擇付款或提交需求]
     I[付款處理或提交成功]
   end
 
-  subgraph 後續階段
+  subgraph "後續階段"
     J[訂單 / 請求確認頁面]
     K[訂單追蹤 / 交付或服務使用]
     L[客戶支援 / 常見問題]
